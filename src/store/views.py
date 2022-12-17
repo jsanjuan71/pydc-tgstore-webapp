@@ -30,5 +30,8 @@ def products(request):
     #productos[0].precio
     return render(request, "products.html", {'productos': products } )
 
-def users(request):
-    return HttpResponse("Hola esta es la pagina de usuarios")
+def cart(request):
+    return render(request, "cart.html")
+
+def account(request):
+    return render(request, "account.html")
